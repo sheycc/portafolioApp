@@ -1,0 +1,32 @@
+::ng-deep {
+  .p-menubar  {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    font-family: cursive;
+    .p-menubar-end {
+      margin-left: 0px;
+
+      .avatar-container {
+        display: flex;
+        align-items: center;
+
+        .p-avatar {
+          border: rgba(255, 255, 255, 0.87) 2px solid;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
