@@ -1,0 +1,75 @@
+::ng-deep {
+  .p-divider {
+    margin: 10px 45px 10px 50px;
+  }
+
+  .p-divider-horizontal {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+  }
+
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  max-height: 672px;
+  overflow-y: auto;
+
+
+  .about-container {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: xxx-large;
+    }
+
+    span {
+      opacity: 0.5;
+    }
+
+    .text-layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p, span {
+        width: 50%;
+        margin-bottom: 0px;
+        text-align: center;
+      }
+
+
+
+    }
+
+    .skill-text-layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p, span {
+        width: 80%;
+        text-align: center;
+      }
+
+      .skill-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+  }
+}
+
