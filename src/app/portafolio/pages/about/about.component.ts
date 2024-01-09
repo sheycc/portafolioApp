@@ -14,6 +14,6 @@ import { FormsModule } from "@angular/forms";
 })
 export class AboutComponent {
 
-  values: number[] = [5, 5, 3, 3, 4, 4, 4, 4, 4, 4, 5];
+  values: number[] = [5, 5, 3, 3, 4, 4, 4, 4, 4, 4, 4];
 
 }

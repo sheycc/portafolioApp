@@ -6,6 +6,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { RatingModule } from 'primeng/rating';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [],
@@ -16,14 +17,16 @@ import { RatingModule } from 'primeng/rating';
     AvatarModule,
     CardModule,
     DividerModule,
-    RatingModule
+    RatingModule,
+    DialogModule
   ],
   exports: [
     MenubarModule,
     AvatarModule,
     CardModule,
     DividerModule,
-    RatingModule
+    RatingModule,
+    DialogModule
   ]
 })
 export class PrimeNgModule { }
