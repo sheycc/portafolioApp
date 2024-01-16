@@ -7,6 +7,11 @@ import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { RatingModule } from 'primeng/rating';
 import { DialogModule } from 'primeng/dialog';
+import { GalleriaModule } from 'primeng/galleria';
+import { CarouselModule } from 'primeng/carousel';
+import { ChipModule } from 'primeng/chip';
+import { ButtonModule } from 'primeng/button';
+import { ToggleButtonModule } from 'primeng/togglebutton';
 
 @NgModule({
   declarations: [],
@@ -18,7 +23,12 @@ import { DialogModule } from 'primeng/dialog';
     CardModule,
     DividerModule,
     RatingModule,
-    DialogModule
+    DialogModule,
+    GalleriaModule,
+    CarouselModule,
+    ChipModule,
+    ButtonModule,
+    ToggleButtonModule
   ],
   exports: [
     MenubarModule,
@@ -26,7 +36,12 @@ import { DialogModule } from 'primeng/dialog';
     CardModule,
     DividerModule,
     RatingModule,
-    DialogModule
+    DialogModule,
+    GalleriaModule,
+    CarouselModule,
+    ChipModule,
+    ButtonModule,
+    ToggleButtonModule
   ]
 })
 export class PrimeNgModule { }

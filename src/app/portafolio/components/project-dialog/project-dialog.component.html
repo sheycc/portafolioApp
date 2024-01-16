@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="img-container" (click)="loadImagesAndShowDialog()">
+    <div class="img-text">
+      <div class="flex flex-column text-center">
+        {{header}}
+        <span>{{tech}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <p-dialog *ngIf="this.images && visible" header="{{header}}" [(visible)]="visible" [modal]="true" [style]="{ width: '80%' }" [draggable]="false" [resizable]="false">
+    <div class="grid">
+      <div class="col-8">
+        <p-carousel [value]="images!" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
+          <ng-template let-product pTemplate="item">
+            <div class="text-center">
+              <div class="mb-3 img-project-container">
+                <img src="assets/{{ product.image }}" [alt]="product.name" class="w-6 shadow-2 img-project" />
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+      <div class="col-4">
+        <p>{{text}}</p>
+      </div>
+    </div>
+  </p-dialog>
+

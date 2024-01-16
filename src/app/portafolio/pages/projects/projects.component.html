@@ -3,47 +3,28 @@
     <div class="text-layout">
       <h1>My Work</h1>
     </div>
+    <div class="chips-container">
+      <button [class.selected]="_flutterActive" [class.non-selected]="!_flutterActive" (click)="filter(1)">
+        <i class="devicon-flutter-plain colored mr-2"></i>
+        Flutter
+      </button>
+      <button [class.selected]="_netActive" [class.non-selected]="!_netActive" (click)="filter(2)">
+        <i class="devicon-csharp-plain-wordmark colored mr-2"></i>
+        .NET
+      </button>
+      <button [class.selected]="_angularActive" [class.non-selected]="!_angularActive" (click)="filter(3)">
+        <i class="devicon-angularjs-plain colored mr-2"></i>
+        Angular
+      </button>
+    </div>
 
     <div class="grid">
-      <div class="col-6">
+      <div class="col-6" *ngFor="let item of projects">
         <p-card>
-          <div class="img-container">
-            <div class="img-text" (click)="showDialog()">
-              See More
-            </div>
-            <app-project-dialog [visible]="visible"></app-project-dialog>
-          </div>
-        </p-card>
-      </div>
-      <div class="col-6">
-        <p-card>
-          <div class="img-container">
-            <div class="img-text">
-              See More
-            </div>
-          </div>
+          <app-project-dialog [index]="item" [imageUrl]="projectsImages[item]" [projectsName]="projectsName" [projectsTech]="projectsTech" [projectsText]="projectsText"></app-project-dialog>
         </p-card>
       </div>
     </div>
-    <div class="grid">
-      <div class="col-6">
-        <p-card>
-          <div class="img-container">
-            <div class="img-text">
-              See More
-            </div>
-          </div>
-        </p-card>
-      </div>
-      <div class="col-6">
-        <p-card>
-          <div class="img-container">
-            <div class="img-text">
-              See More
-            </div>
-          </div>
-        </p-card>
-      </div>
-    </div>
+
   </div>
 </div>
