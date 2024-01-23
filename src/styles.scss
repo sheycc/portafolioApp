@@ -2,10 +2,7 @@
 @import 'primeicons/primeicons.css';
 
 html, body {
-  height: 100%;
-  margin: 4px 4px 4px 4px;
-  padding-bottom: 8px;
-  border-radius: 6px;
+  height: 100vh;
   overflow: hidden;
   background-color: var(--surface-b);
   font-family: cursive;
@@ -17,4 +14,22 @@ html, body {
 
 .card-color {
   color: var(--surface-c);
+}
+
+@media (max-width: 350px) {
+  body {
+    margin: 1px 1px 1px 1px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+  body {
+    margin: 1.5px 1.5px 1.5px 1.5px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  body {
+    margin: 2px 2px 2px 2px;
+  }
 }

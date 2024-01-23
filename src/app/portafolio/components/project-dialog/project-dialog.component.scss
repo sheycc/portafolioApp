@@ -1,6 +1,4 @@
 :host {
-  //--img-url: url('/assets/home.jpg');
-  //--bg-size: cover;
 }
 
 ::ng-deep{
@@ -17,6 +15,7 @@
       font-weight: 600;
       font-size: xx-large;
     }
+
   }
 }
 
@@ -44,7 +43,7 @@
 }
 
 .img-container:hover::after {
-  opacity: 0.2; /* Change opacity on hover to make the image clearer */
+  opacity: 0.2;
   cursor: pointer;
 
 }
@@ -55,8 +54,8 @@
   left: 50%;
   transform: translate(-50%, -50%) translateY(20px);
   z-index: 1;
-  color: white; /* Set text color */
-  font-size: 24px; /* Adjust text size */
+  color: white;
+  font-size: 24px;
   font-family: cursive;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -79,7 +78,7 @@
 .img-project {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* This will make sure the image covers the container */
+  object-fit: contain;
 }
 
 .w-6 {
@@ -94,4 +93,616 @@ p {
 span {
   opacity: 0.8;
   font-size: medium;
+}
+
+
+@media (max-width: 350px) {
+  .img-container {
+    height: 80px;
+    font-size: 6px;
+  }
+
+  .img-text {
+    font-size: 6px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 6px;
+  }
+
+  .img-text span {
+    font-size: 4px;
+  }
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 40px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 150;
+          font-size: x-small;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.2rem;
+          height: 0.3rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.5rem;
+        }
+      }
+
+      .p-dialog-title {
+        font-family: cursive;
+        font-weight: 150;
+        font-size: x-small;
+      }
+
+      p {
+        font-size: 2px;
+      }
+
+      .p-icon {
+        width: 0.3rem;
+        height: 0.2rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 0.1rem;
+        height: 0.7rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.2rem;
+      }
+
+      .p-carousel .p-carousel-indicators {
+        padding: 0.1rem;
+
+        li {
+          margin-right: 0.2rem;
+          margin-bottom: 0.3rem;
+        }
+
+        button {
+          background-color: #304562;
+          width: 0.4rem;
+          height: 0.1rem;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          border-radius: 0;
+        }
+        .p-highlight button {
+          background-color: #FFD54F;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+  .img-container {
+    height: 150px;
+    font-size: 8px;
+  }
+
+  .img-text {
+    font-size: 8px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 8px;
+  }
+
+  .img-text span {
+    font-size: 6px;
+  }
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 130px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 150;
+          font-size: x-small;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.2rem;
+          height: 0.3rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.5rem;
+        }
+      }
+      .p-dialog-title {
+        font-family: cursive;
+        font-weight: 150;
+        font-size: x-small;
+      }
+
+      p {
+        font-size: 6px;
+      }
+
+      .p-icon {
+        width: 0.3rem;
+        height: 0.2rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 0.1rem;
+        height: 0.7rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.2rem;
+      }
+
+      .p-carousel .p-carousel-indicators {
+        padding: 0.1rem;
+
+        li {
+          margin-right: 0.2rem;
+          margin-bottom: 0.3rem;
+        }
+
+        button {
+          background-color: #304562;
+          width: 0.4rem;
+          height: 0.1rem;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          border-radius: 0;
+        }
+        .p-highlight button {
+          background-color: #FFD54F;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .img-container {
+    height: 160px;
+    font-size: 14px;
+  }
+
+  .img-text {
+    font-size: 14px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 14px;
+  }
+
+  .img-text span {
+    font-size: 10px;
+  }
+
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 200px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 180;
+          font-size: medium;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.3rem;
+          height: 0.4rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.6rem;
+        }
+      }
+      .p-dialog-title {
+        font-family: cursive;
+        font-weight: 200;
+        font-size: medium;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .p-icon {
+        width: 0.4rem;
+        height: 0.5rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 0.3rem;
+        height: 0.9rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.4rem;
+      }
+
+      .p-carousel .p-carousel-indicators {
+        padding: 0.1rem;
+
+        li {
+          margin-right: 0.4rem;
+          margin-bottom: 0.5rem;
+        }
+
+        button {
+          background-color: #304562;
+          width: 0.6rem;
+          height: 0.3rem;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          border-radius: 0;
+        }
+        .p-highlight button {
+          background-color: #FFD54F;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+  .img-container {
+    height: 250px;
+    font-size: 16px;
+  }
+
+  .img-text {
+    font-size: 16px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 16px;
+  }
+
+  .img-text span {
+    font-size: 12px;
+  }
+
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 250px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 300;
+          font-size: x-large;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.4rem;
+          height: 0.5rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.6rem;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .p-icon {
+        width: 0.9rem;
+        height: 0.7rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 1rem;
+        height: 1.2rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.4rem;
+
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1100px) and (max-width: 2000px) {
+  .img-container {
+    height: 250px;
+    font-size: 16px;
+  }
+
+  .img-text {
+    font-size: 16px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 16px;
+  }
+
+  .img-text span {
+    font-size: 12px;
+  }
+
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 450px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 400;
+          font-size: xxx-large;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.4rem;
+          height: 0.5rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.6rem;
+        }
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      .p-icon {
+        width: 0.9rem;
+        height: 0.7rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 1rem;
+        height: 1.2rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.4rem;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 2000px) {
+  .img-container {
+    height: 250px;
+    font-size: 16px;
+  }
+
+  .img-text {
+    font-size: 16px;
+  }
+
+  .img-container:hover .img-text {
+    font-size: 16px;
+  }
+
+  .img-text span {
+    font-size: 12px;
+  }
+
+
+  ::ng-deep {
+    .img-project {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .p-dialog {
+
+      .p-dialog-content {
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0 0.5rem 0.2rem 0.5rem;
+
+        .text-center {
+          .img-project-container {
+            height: 550px;
+          }
+        }
+      }
+
+      .p-dialog-header {
+        border-bottom: 0 none;
+        background: #1f2d40;
+        color: rgba(255, 255, 255, 0.87);
+        padding: 0.3rem 0.5rem;
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+
+        .p-dialog-title {
+          font-family: cursive;
+          font-weight: 500;
+          font-size: xxx-large;
+        }
+
+        .p-dialog-header-icon {
+          width: 0.6rem;
+          height: 0.7rem;
+          color: rgba(255, 255, 255, 0.6);
+          border: 0 none;
+          background: transparent;
+          border-radius: 50%;
+          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+          margin-right: 0.8rem;
+        }
+      }
+
+      p {
+        font-size: 30px;
+      }
+
+      .p-icon {
+        width: 1rem;
+        height: 0.9rem;
+      }
+
+      .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+        width: 2rem;
+        height: 1.8rem;
+        color: rgba(255, 255, 255, 0.6);
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        margin: 0.8rem;
+      }
+    }
+  }
 }

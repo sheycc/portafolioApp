@@ -1,0 +1,247 @@
+::ng-deep {
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  overflow-y: auto;
+
+
+  .about-container {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: xxx-large;
+    }
+
+    span {
+      opacity: 0.5;
+    }
+
+    .text-layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p, span {
+        width: 50%;
+        margin-bottom: 0px;
+        text-align: center;
+      }
+
+      .info-container {
+        display: flex;
+        justify-content: center;
+
+        span {
+          width: 100%
+        }
+
+        .animated-button {
+          display: inline-block;
+          transition: transform 0.3s ease;
+          color: white;
+        }
+
+        .animated-button:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 390px) {
+  .container .about-container {
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: x-small;
+    }
+
+    .text-layout {
+      margin-bottom: 3px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 3px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 4px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}
+
+@media (min-width: 390px) and (max-width: 500px) {
+  .container .about-container {
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: medium;
+    }
+
+    .text-layout {
+      margin-bottom: 3px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 6px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 8px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .container .about-container {
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: large;
+    }
+
+    .text-layout {
+      margin-bottom: 3px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 8px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 9px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .container .about-container {
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: xx-large;
+    }
+
+    .text-layout {
+      margin-bottom: 3px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 16px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .container .about-container {
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: xxx-large;
+    }
+
+    .text-layout {
+      margin-bottom: 4px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}
+
+
+@media (min-width: 2000px) {
+  .container .about-container {
+    padding: 4px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .text-layout {
+      margin-bottom: 8px;
+
+      p, span {
+        width: 60%;
+        margin-bottom: 14px;
+        text-align: center;
+        font-size: 28px;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-size: 38px;
+    }
+  }
+
+  ::ng-deep {
+  }
+}

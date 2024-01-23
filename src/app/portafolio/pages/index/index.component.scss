@@ -1,4 +1,8 @@
 
+  * {
+    box-sizing: border-box;
+  }
+
   .img-container {
     background-image: url('/assets/home.jpg');
     background-size: cover;
@@ -7,11 +11,6 @@
     height: 100%;
     width: 100%;
     opacity: 0.3;
-    filter: drop-shadow(2px 4px 6px black);
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-
-
   }
 
   .img-text {
@@ -21,17 +20,37 @@
 
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 70%;
+    width: 80%;
 
+    //width: 0;
     p {
-      color: rgba(255, 255, 255, 0.87);
+      color: white;
       font-size: xxx-large;
+    }
+
+    #text1 {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 4s steps(40) 1s 1 normal both;
+
+      span {
+        color: transparent;
+        background-image: linear-gradient(90deg, #c8a5ef, #1f44f8);
+        background-clip: text;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    #text2 {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(100) 1 ;
     }
   }
 
   .img-link-text {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -55,6 +74,91 @@
 
   }
 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
+  @media (max-width: 350px) {
+    .img-text {
+      width: 80%;
+      p {
+        font-size: 8px;
+      }
+    }
 
+    .img-link-text {
+      p {
+        font-size: 4px;
+      }
+    }
 
+    .animated-button {
+      .pi {
+        font-size: 0.2rem;
+      }
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 500px) {
+    .img-text {
+      width: 80%;
+      p {
+        font-size: small;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: xx-small;
+      }
+    }
+
+    .animated-button {
+      .pi {
+        font-size: 0.4rem;
+      }
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 750px) {
+    .img-text {
+      width: 80%;
+      p {
+        font-size: large;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: x-small;
+      }
+    }
+
+    .animated-button {
+      .pi {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 1090px) {
+    .img-text {
+      width: 90%;
+      p {
+        font-size: x-large;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: small;
+      }
+    }
+
+    .animated-button {
+      .pi {
+        font-size: 0.7rem;
+      }
+    }
+  }

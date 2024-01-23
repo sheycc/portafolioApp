@@ -4,11 +4,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    //
+    //border-top-left-radius: 6px;
+    //border-top-right-radius: 6px;
 
     font-family: cursive;
+
+    .p-menubar-button {
+      max-width: 10px;
+    }
+
+    .p-menubar-button:focus {
+      outline: 0 none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+
+    .p-menubar-button:hover {
+      color: rgba(255, 255, 255, 0.87);
+      background: transparent;
+    }
+
     .p-menubar-end {
       margin-left: 0px;
 
@@ -16,11 +32,209 @@
         display: flex;
         align-items: center;
 
+        span {
+          color: transparent;
+          background-image: linear-gradient(50deg, #c8a5ef, #1f44f8);
+          background-clip: text;
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
         .p-avatar {
-          border: rgba(255, 255, 255, 0.87) 2px solid;
+          border: #c8a5ef 2px solid;
           border-radius: 50%;
         }
       }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .p-menubar {
+      padding: 0.2rem;
+
+      max-height: 15px;
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.2px solid #304562;
+      border-radius: 0.8px;
+    }
+
+    .p-component {
+      font-size: 3px;
+    }
+
+    .mr-2 {
+      margin-right: 0.2rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 0.4rem;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #c8a5ef 0.5px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+
+
+    .p-menubar .p-menubar-root-list {
+      border: 0.2px solid #304562;
+      .p-menuitem > .p-menuitem-content .p-menuitem-link {
+        padding: 0.2rem 0.4rem;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    }
+
+    .pi {
+      font-size: 6px;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 500px) {
+    .p-menubar {
+      max-height: 24px;
+      padding: 0.4rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.2px solid #304562;
+      border-radius: 1px;
+    }
+
+    .p-component {
+      font-size: 5px;
+    }
+
+    .mr-2 {
+      margin-right: 0.2rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 0.6rem;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #c8a5ef 0.8px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .p-menubar .p-menubar-root-list {
+      border: 0.2px solid #304562;
+      .p-menuitem > .p-menuitem-content .p-menuitem-link {
+        padding: 0.4rem 0.6rem;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    }
+
+    .pi {
+      font-size: 10px;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 700px) {
+    .p-menubar {
+      max-height: 38px;
+      padding: 0.6rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.3px solid #304562;
+      border-radius: 1.5px;
+    }
+
+    .p-component {
+      font-size: 8px;
+    }
+
+    .mr-2 {
+      margin-right: 0.3rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 1rem;
+        margin-right: 4px;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #c8a5ef 1.5px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .p-menubar .p-menubar-root-list {
+      border: 0.4px solid #304562;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 890px) {
+    .p-menubar {
+      max-height: 60px;
+      padding: 0.8rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.3px solid #304562;
+      border-radius: 1.8px;
+    }
+
+    .p-component {
+      font-size: 10px;
+    }
+
+    .mr-2 {
+      margin-right: 0.4rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 3rem;
+        margin-right: 15px;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #c8a5ef 1.8px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 2.8rem;
+      height: 2.8rem;
     }
   }
 }
@@ -29,4 +243,7 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.87);
 }
+
+
+
 
