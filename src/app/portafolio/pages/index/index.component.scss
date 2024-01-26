@@ -10,19 +10,18 @@
     position: relative;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 
   .img-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
 
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
 
-    //width: 0;
     p {
       color: white;
       font-size: xxx-large;
@@ -31,14 +30,14 @@
     #text1 {
       overflow: hidden;
       white-space: nowrap;
-      animation: typing 4s steps(40) 1s 1 normal both;
+      animation: rebound 2s ease-in-out 1;
 
       span {
-        color: transparent;
-        background-image: linear-gradient(90deg, #c8a5ef, #1f44f8);
+        color: #37e4d9;
         background-clip: text;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
       }
+
     }
 
     #text2 {
@@ -52,7 +51,8 @@
     position: absolute;
     top: 85%;
     left: 50%;
-
+    display: flex;
+    flex-direction: column;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 70%;
@@ -63,26 +63,17 @@
     }
 
     .animated-button {
-      display: inline-block;
       transition: transform 0.3s ease;
       color: white;
+      animation: rebound 2s ease-in-out infinite;
+      display: inline-block;
     }
-
-    .animated-button:hover {
-      transform: translateY(-5px);
-    }
-
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
   }
 
   @media (max-width: 350px) {
     .img-text {
       width: 80%;
-      p {
+      p, .material-symbols-outlined {
         font-size: 8px;
       }
     }
@@ -94,6 +85,7 @@
     }
 
     .animated-button {
+      margin-top: -15px;
       .pi {
         font-size: 0.2rem;
       }
@@ -103,8 +95,30 @@
   @media (min-width: 350px) and (max-width: 500px) {
     .img-text {
       width: 80%;
-      p {
+      p, .material-symbols-outlined {
         font-size: small;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: 5px;
+      }
+    }
+
+    .animated-button {
+      margin-top: -10px;
+      .pi {
+        font-size: 0.4rem;
+      }
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 750px) {
+    .img-text {
+      width: 80%;
+      p, .material-symbols-outlined {
+        font-size: large;
       }
     }
 
@@ -115,27 +129,7 @@
     }
 
     .animated-button {
-      .pi {
-        font-size: 0.4rem;
-      }
-    }
-  }
-
-  @media (min-width: 500px) and (max-width: 750px) {
-    .img-text {
-      width: 80%;
-      p {
-        font-size: large;
-      }
-    }
-
-    .img-link-text {
-      p {
-        font-size: x-small;
-      }
-    }
-
-    .animated-button {
+      margin-top: -8px;
       .pi {
         font-size: 0.7rem;
       }
@@ -145,7 +139,7 @@
   @media (min-width: 750px) and (max-width: 1090px) {
     .img-text {
       width: 90%;
-      p {
+      p, .material-symbols-outlined {
         font-size: x-large;
       }
     }
@@ -157,8 +151,54 @@
     }
 
     .animated-button {
+      margin-top: -5px;
       .pi {
         font-size: 0.7rem;
+      }
+    }
+  }
+
+  @media (min-width: 1090px) and (max-width: 2090px) {
+    .img-text {
+      width: 90%;
+      p, .material-symbols-outlined {
+        font-size: xx-large;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: small;
+      }
+    }
+
+    .animated-button {
+      margin-top: -5px;
+      .pi {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+
+  @media (min-width: 2090px) {
+    .img-text {
+      width: 90%;
+      p, .material-symbols-outlined {
+        font-size: 60px;
+      }
+    }
+
+    .img-link-text {
+      p {
+        font-size: 40px;
+      }
+    }
+
+    .animated-button {
+      margin-top: -5px;
+      .pi {
+        font-size: 2rem;
       }
     }
   }

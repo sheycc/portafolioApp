@@ -12,8 +12,11 @@
   height: 100%;
   width: 100%;
   margin-bottom: 30px;
-  //max-height: 672px;
   overflow-y: auto;
+
+  h1 {
+    animation: rebound 2s ease-in-out 1;
+  }
 
   .p-button  {
     margin-right: 10px;
@@ -100,6 +103,7 @@
     }
   }
 }
+
 
 
 @media (max-width: 390px) {

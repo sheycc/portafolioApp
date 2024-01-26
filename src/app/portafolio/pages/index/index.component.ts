@@ -19,7 +19,7 @@ export class IndexComponent {
     inject(NgZone).runOutsideAngular(() => {
       setTimeout(() => {this.zone.run(() => {
         this.visible = true;
-      });}, 4000);
+      });}, 1000);
     })
   }
 

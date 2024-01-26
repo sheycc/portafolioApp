@@ -4,14 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //
-    //border-top-left-radius: 6px;
-    //border-top-right-radius: 6px;
-
     font-family: cursive;
 
     .p-menubar-button {
       max-width: 10px;
+      color: #37e4d9 ;
     }
 
     .p-menubar-button:focus {
@@ -21,10 +18,20 @@
     }
 
     .p-menubar-button:hover {
-      color: rgba(255, 255, 255, 0.87);
+      color: #d20b74;
       background: transparent;
     }
 
+    .p-menuitem-content {
+      .p-menuitem-text {
+        color: transparent;
+        background-image: linear-gradient(60deg, #37e4d9, #d20b74);
+        background-clip: text;
+      }
+      .p-menuitem-icon {
+        color: #37e4d9;
+      }
+    }
     .p-menubar-end {
       margin-left: 0px;
 
@@ -33,15 +40,15 @@
         align-items: center;
 
         span {
-          color: transparent;
-          background-image: linear-gradient(50deg, #c8a5ef, #1f44f8);
+          color: #37e4d9;
+          //background-image: linear-gradient(60deg, #37e4d9, #d20b74);
           background-clip: text;
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
 
         .p-avatar {
-          border: #c8a5ef 2px solid;
+          border: #37e4d9 2px solid;
           border-radius: 50%;
+          text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
         }
       }
     }
@@ -75,9 +82,8 @@
     }
 
     .p-menubar .p-menubar-end .avatar-container .p-avatar {
-      border: #c8a5ef 0.5px solid;
+      border: #37e4d9 0.5px solid;
       border-radius: 50%;
-
     }
     .p-avatar.p-avatar-xl {
       width: 0.7rem;
@@ -130,7 +136,7 @@
     }
 
     .p-menubar .p-menubar-end .avatar-container .p-avatar {
-      border: #c8a5ef 0.8px solid;
+      border: #37e4d9 0.8px solid;
       border-radius: 50%;
 
     }
@@ -185,7 +191,7 @@
     }
 
     .p-menubar .p-menubar-end .avatar-container .p-avatar {
-      border: #c8a5ef 1.5px solid;
+      border: #37e4d9 1.5px solid;
       border-radius: 50%;
 
     }
@@ -228,13 +234,132 @@
     }
 
     .p-menubar .p-menubar-end .avatar-container .p-avatar {
-      border: #c8a5ef 1.8px solid;
+      border: #37e4d9 1.8px solid;
       border-radius: 50%;
 
     }
     .p-avatar.p-avatar-xl {
       width: 2.8rem;
       height: 2.8rem;
+    }
+  }
+
+
+  @media (min-width: 970px) and (max-width: 1490px) {
+    .p-menubar {
+      max-height: 80px;
+      padding: 0.8rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.3px solid #304562;
+      border-radius: 1.8px;
+    }
+
+    .p-component {
+      font-size: 15px;
+    }
+
+    .mr-2 {
+      margin-right: 0.6rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 3rem;
+        margin-right: 15px;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #37e4d9 2px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+
+
+  @media (min-width: 1490px) and (max-width: 2490px) {
+    .p-menubar {
+      max-height: 120px;
+      padding: 0.8rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.3px solid #304562;
+      border-radius: 1.8px;
+    }
+
+    .p-component {
+      font-size: 20px;
+    }
+
+    .mr-2 {
+      margin-right: 0.8rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 5rem;
+        margin-right: 15px;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #37e4d9 2.8px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 3.8rem;
+      height: 3.8rem;
+    }
+  }
+
+  @media (min-width: 2490px) {
+    .p-menubar {
+      max-height: 140px;
+      padding: 0.8rem;
+
+      background: #1f2d40;
+      color: rgba(255, 255, 255, 0.87);
+      border: 0.3px solid #304562;
+      border-radius: 1.8px;
+    }
+
+    .p-component {
+      font-size: 25px;
+    }
+
+    .mr-2 {
+      margin-right: 0.8rem !important;
+    }
+
+    .p-menubar-button {
+
+      .p-icon {
+        height: 6rem;
+        margin-right: 15px;
+      }
+
+    }
+
+    .p-menubar .p-menubar-end .avatar-container .p-avatar {
+      border: #37e4d9 3px solid;
+      border-radius: 50%;
+
+    }
+    .p-avatar.p-avatar-xl {
+      width: 4.8rem;
+      height: 4.8rem;
     }
   }
 }
