@@ -8,12 +8,60 @@ html, body {
   font-family: cursive;
 }
 
+h1 {
+  color: #37e4d9; //#ffbe00;
+}
+
 .text-layout {
   color: var(--text-color);
 }
 
 .card-color {
   color: var(--surface-c);
+}
+
+.divider {
+  width: 70%;
+  margin: 10px 10px;
+  border-width: 0.1px; /* Set the desired border width */
+  border-style: solid;
+  border-image: linear-gradient(60deg, #37e4d9, #d20b74) 1;
+}
+
+i {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+i:hover {
+  animation: waving 0.5s ease-in-out 1;
+}
+
+
+@keyframes waving {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(0deg);
+  }
+  40%, 60% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes rebound {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(4vh);
+  }
+  60% {
+    transform: translateY(2vh);
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @media (max-width: 350px) {

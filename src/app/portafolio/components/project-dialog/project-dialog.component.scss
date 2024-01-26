@@ -1,6 +1,3 @@
-:host {
-}
-
 ::ng-deep{
   .p-dialog {
     display: flex;
@@ -14,8 +11,8 @@
       font-family: cursive;
       font-weight: 600;
       font-size: xx-large;
+      color: #37e4d9
     }
-
   }
 }
 
@@ -160,14 +157,8 @@ span {
         }
       }
 
-      .p-dialog-title {
-        font-family: cursive;
-        font-weight: 150;
-        font-size: x-small;
-      }
-
       p {
-        font-size: 2px;
+        font-size: 3px;
       }
 
       .p-icon {
@@ -211,7 +202,7 @@ span {
 
 @media (min-width: 350px) and (max-width: 500px) {
   .img-container {
-    height: 150px;
+    height: 130px;
     font-size: 8px;
   }
 
@@ -239,11 +230,11 @@ span {
       .p-dialog-content {
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0 0.5rem 0.1rem 0.5rem;
 
         .text-center {
           .img-project-container {
-            height: 130px;
+            height: 120px;
           }
         }
       }
@@ -252,18 +243,18 @@ span {
         border-bottom: 0 none;
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
+        padding: 0.5rem 0.7rem;
         border-top-right-radius: 1px;
         border-top-left-radius: 1px;
 
         .p-dialog-title {
           font-family: cursive;
-          font-weight: 150;
-          font-size: x-small;
+          font-weight: 170;
+          font-size: small;
         }
 
         .p-dialog-header-icon {
-          width: 0.2rem;
+          width: 1rem;
           height: 0.3rem;
           color: rgba(255, 255, 255, 0.6);
           border: 0 none;
@@ -273,34 +264,29 @@ span {
           margin-right: 0.5rem;
         }
       }
-      .p-dialog-title {
-        font-family: cursive;
-        font-weight: 150;
-        font-size: x-small;
-      }
 
       p {
-        font-size: 6px;
+        font-size: 5px;
       }
 
       .p-icon {
-        width: 0.3rem;
-        height: 0.2rem;
+        width: 0.4rem;
+        height: 0.3rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 0.1rem;
+        width: 0.3rem;
         height: 0.7rem;
         color: rgba(255, 255, 255, 0.6);
         border: 0 none;
         background: transparent;
         border-radius: 50%;
         transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.2rem;
+        margin: 0.4rem;
       }
 
       .p-carousel .p-carousel-indicators {
-        padding: 0.1rem;
+        padding: 0.2rem;
 
         li {
           margin-right: 0.2rem;
@@ -357,7 +343,7 @@ span {
 
         .text-center {
           .img-project-container {
-            height: 200px;
+            height: 150px;
           }
         }
       }
@@ -366,7 +352,7 @@ span {
         border-bottom: 0 none;
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
+        padding: 0.6rem 0.8rem;
         border-top-right-radius: 1px;
         border-top-left-radius: 1px;
 
@@ -387,14 +373,9 @@ span {
           margin-right: 0.6rem;
         }
       }
-      .p-dialog-title {
-        font-family: cursive;
-        font-weight: 200;
-        font-size: medium;
-      }
 
       p {
-        font-size: 14px;
+        font-size: 8px;
       }
 
       .p-icon {
@@ -471,7 +452,7 @@ span {
 
         .text-center {
           .img-project-container {
-            height: 250px;
+            height: 150px;
           }
         }
       }
@@ -480,7 +461,7 @@ span {
         border-bottom: 0 none;
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
+        padding: 0.7rem 0.9rem;
         border-top-right-radius: 1px;
         border-top-left-radius: 1px;
 
@@ -503,7 +484,7 @@ span {
       }
 
       p {
-        font-size: 16px;
+        font-size: 8px;
       }
 
       .p-icon {
@@ -558,11 +539,11 @@ span {
       .p-dialog-content {
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0 1rem 0 1rem;
 
         .text-center {
           .img-project-container {
-            height: 450px;
+            height: 350px;
           }
         }
       }
@@ -571,7 +552,7 @@ span {
         border-bottom: 0 none;
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
+        padding: 0.7rem 0.9rem;
         border-top-right-radius: 1px;
         border-top-left-radius: 1px;
 
@@ -594,7 +575,7 @@ span {
       }
 
       p {
-        font-size: 24px;
+        font-size: 16px;
       }
 
       .p-icon {
@@ -649,11 +630,11 @@ span {
       .p-dialog-content {
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0 1.5rem 1rem 1.5rem;
 
         .text-center {
           .img-project-container {
-            height: 550px;
+            height: 750px;
           }
         }
       }
@@ -662,19 +643,19 @@ span {
         border-bottom: 0 none;
         background: #1f2d40;
         color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
+        padding: 6rem 3rem;
         border-top-right-radius: 1px;
         border-top-left-radius: 1px;
 
         .p-dialog-title {
           font-family: cursive;
-          font-weight: 500;
-          font-size: xxx-large;
+          font-weight: 800;
+          font-size: 80px;
         }
 
         .p-dialog-header-icon {
-          width: 0.6rem;
-          height: 0.7rem;
+          width: 3rem;
+          height: 3rem;
           color: rgba(255, 255, 255, 0.6);
           border: 0 none;
           background: transparent;
@@ -685,12 +666,12 @@ span {
       }
 
       p {
-        font-size: 30px;
+        font-size: 40px;
       }
 
       .p-icon {
-        width: 1rem;
-        height: 0.9rem;
+        width: 3rem;
+        height: 3rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
