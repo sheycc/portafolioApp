@@ -33,15 +33,16 @@ export class IndexComponent {
   async download()  {
     try {
       const localFilePath = 'assets/SheylaCruzCastro-CV.pdf';
-      // const response = await fetch(localFilePath);
-      // // Create a blob object from the response
-      const blob = await this.http.get(localFilePath, { responseType: 'blob' }).toPromise();
-      const blobUrl = window.URL.createObjectURL(blob!);
+      const response = await fetch(localFilePath);
+      const blob = await response.blob();
+      // const blob = await this.http.get(localFilePath, { responseType: 'blob' }).toPromise();
+      const blobUrl = window.URL.createObjectURL(blob);
       window.URL.revokeObjectURL(blobUrl);
+      this.confirm();
     } catch (error) {
       // console.error('Error downloading CV:', error);
     }
-    this.confirm();
+
   }
 
   confirm() {
