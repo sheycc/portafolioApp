@@ -12,6 +12,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [],
@@ -28,7 +29,8 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     CarouselModule,
     ChipModule,
     ButtonModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    MessagesModule
   ],
   exports: [
     MenubarModule,
@@ -41,7 +43,8 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     CarouselModule,
     ChipModule,
     ButtonModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    MessagesModule
   ]
 })
 export class PrimeNgModule { }

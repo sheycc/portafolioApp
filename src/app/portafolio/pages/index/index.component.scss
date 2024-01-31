@@ -1,4 +1,14 @@
 
+  ::ng-deep {
+    .p-message.p-message-success {
+      background: #a0dfdb;
+      border: solid #3b8581;
+      border-width: 0 0 0 6px;
+      color: #515a51;
+      font-family: cursive;
+    }
+  }
+
   * {
     box-sizing: border-box;
   }
