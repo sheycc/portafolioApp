@@ -10,13 +10,15 @@ import { PrimeNgModule } from "../../../prime-ng/prime-ng.module";
 
 import { PLATFORM_ID, Inject } from '@angular/core';
 import {isPlatformBrowser} from "@angular/common";
+import {FlexModule} from "@angular/flex-layout";
 
 @Component({
   selector: 'app-project-dialog',
   standalone: true,
-    imports: [
-        PrimeNgModule
-    ],
+  imports: [
+    PrimeNgModule,
+    FlexModule
+  ],
   templateUrl: './project-dialog.component.html',
   styleUrl: './project-dialog.component.scss'
 })
@@ -28,8 +30,6 @@ export class ProjectDialogComponent implements OnInit {
   tech: string = '';
   text: string = '';
   imgUrl: string = '/assets/home.jpg';
-
-  responsiveOptions: any[] | undefined;
 
   @HostBinding('style.--img-url') backgroundImage: string = `url('${this.imgUrl}')`;
 
@@ -52,23 +52,6 @@ export class ProjectDialogComponent implements OnInit {
 
     this.imageUrl = this.imgUrl;
 
-    this.responsiveOptions = [
-      {
-        breakpoint: '1199px',
-        numVisible: 1,
-        numScroll: 1
-      },
-      {
-        breakpoint: '991px',
-        numVisible: 1,
-        numScroll: 1
-      },
-      {
-        breakpoint: '767px',
-        numVisible: 1,
-        numScroll: 1
-      }
-    ];
   }
 
   loadImagesAndShowDialog() {

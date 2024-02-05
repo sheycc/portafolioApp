@@ -9,22 +9,53 @@
   </div>
 </div>
 
-  <p-dialog *ngIf="this.images && visible" header="{{header}}" [(visible)]="visible" [modal]="true" [style]="{ width: '80%' }" [draggable]="false" [resizable]="false">
-    <div class="grid">
-      <div class="col-8">
-        <p-carousel [value]="images!" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
-          <ng-template let-product pTemplate="item">
-            <div class="text-center">
-              <div class="mb-3 img-project-container">
-                <img src="assets/{{ product.image }}" [alt]="product.name" class="w-6 shadow-2 img-project" />
-              </div>
-            </div>
-          </ng-template>
-        </p-carousel>
-      </div>
-      <div class="col-4">
-        <p>{{text}}</p>
-      </div>
+<p-dialog *ngIf="this.images && visible" [(visible)]="visible" [modal]="true" [style]="{ width: '80vw' }"  [draggable]="false" [resizable]="false">
+  <ng-template pTemplate="header">
+    <div class="inline-flex align-items-center justify-content-center gap-2">
+      <p style="color: #37e4d9">{{header}}</p>
     </div>
-  </p-dialog>
+  </ng-template>
+  <div class="grid">
+    <div class="col-8 p-1">
+      <p-carousel [value]="images!" [numVisible]="1" [numScroll]="1" [circular]="false">
+        <ng-template let-product pTemplate="item">
+          <div class="text-center">
+            <div class="mb-3 img-project-container">
+              <img src="assets/{{ product.image }}" [alt]="product.name" class="w-6 shadow-2 img-project" />
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+    <div class="col-4 p-1">
+      <p-fieldset>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center gap-2 px-2">
+            <p class="colored">Description</p>
+          </div>
+        </ng-template>
+
+        <ul class="p-1 m-0">
+          <li>
+            <p><b>Tech:</b></p>
+            <ul class="p-0 pl-1">
+              <li>
+                <p>{{tech}}</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Summary:</b></p>
+            <ul class="p-0 pl-1">
+              <li>
+                <p>{{text}}</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </p-fieldset>
+    </div>
+  </div>
+</p-dialog>
+
 
