@@ -1,17 +1,21 @@
 ::ng-deep{
   .p-dialog {
-    display: flex;
-    flex-direction: column;
-    pointer-events: auto;
-    height: 70%;
-    transform: scale(1);
-    position: relative;
+    .colored {
+      color: transparent;
+      background-image: linear-gradient(60deg, #37e4d9, #d20b74);
+      background-clip: text;
+    }
 
-    .p-dialog-title {
-      font-family: cursive;
-      font-weight: 600;
-      font-size: xx-large;
-      color: #37e4d9
+    li::marker{
+      color: #d20b74;
+    }
+
+    .p-dialog-header {
+      background-color: #314766;
+    }
+
+    .p-dialog-content {
+      padding: 1rem;
     }
   }
 }
@@ -118,11 +122,23 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 0.3px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.1rem;
+        border: 0.3px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 0.1rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.1rem solid #314766;
+      border-radius: 2px;
+
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0.4rem;
 
         .text-center {
           .img-project-container {
@@ -132,65 +148,38 @@ span {
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0.3rem 0.5rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 150;
-          font-size: x-small;
-        }
+        padding: 0.1rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
-          width: 0.2rem;
+          width: 0.3rem;
           height: 0.3rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.5rem;
         }
       }
 
       p {
-        font-size: 3px;
+        font-size: 2px;
       }
 
       .p-icon {
-        width: 0.3rem;
         height: 0.2rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 0.1rem;
-        height: 0.7rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.2rem;
+        width: 0.3rem;
+        height: 0.3rem;
       }
 
       .p-carousel .p-carousel-indicators {
         padding: 0.1rem;
-
         li {
           margin-right: 0.2rem;
           margin-bottom: 0.3rem;
         }
-
         button {
-          background-color: #304562;
           width: 0.4rem;
           height: 0.1rem;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          border-radius: 0;
         }
         .p-highlight button {
           background-color: #FFD54F;
@@ -225,43 +214,41 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 0.5px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.1rem;
+        border: 0.5px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 0.1rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.2rem solid #314766;
+      border-radius: 2px;
 
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.1rem 0.5rem;
+        padding: 0.5rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         .text-center {
           .img-project-container {
-            height: 120px;
+            height: 100px;
           }
         }
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0.5rem 0.7rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 170;
-          font-size: small;
-        }
+        padding: 0.2rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
-          width: 1rem;
-          height: 0.3rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.5rem;
+          width: 0.6rem;
+          height: 0.6rem;
         }
       }
 
@@ -270,19 +257,12 @@ span {
       }
 
       .p-icon {
-        width: 0.4rem;
         height: 0.3rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 0.3rem;
-        height: 0.7rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.4rem;
+        width: 0.5rem;
+        height: 0.5rem;
       }
 
       .p-carousel .p-carousel-indicators {
@@ -294,11 +274,8 @@ span {
         }
 
         button {
-          background-color: #304562;
-          width: 0.4rem;
-          height: 0.1rem;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          border-radius: 0;
+          width: 0.6rem;
+          height: 0.2rem;
         }
         .p-highlight button {
           background-color: #FFD54F;
@@ -326,7 +303,6 @@ span {
     font-size: 10px;
   }
 
-
   ::ng-deep {
     .img-project {
       width: 100%;
@@ -334,43 +310,41 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 0.8px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.2rem;
+        border: 0.8px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 0.2rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.2rem solid #314766;
+      border-radius: 2px;
 
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0.7rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         .text-center {
           .img-project-container {
-            height: 150px;
+            height: 130px;
           }
         }
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0.6rem 0.8rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 180;
-          font-size: medium;
-        }
+        padding: 0.4rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
-          width: 0.3rem;
-          height: 0.4rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.6rem;
+          width: 0.8rem;
+          height: 0.8rem;
         }
       }
 
@@ -379,23 +353,16 @@ span {
       }
 
       .p-icon {
-        width: 0.4rem;
         height: 0.5rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 0.3rem;
-        height: 0.9rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.4rem;
+        width: 0.8rem;
+        height: 0.8rem;
       }
 
       .p-carousel .p-carousel-indicators {
-        padding: 0.1rem;
+        padding: 0.2rem;
 
         li {
           margin-right: 0.4rem;
@@ -403,11 +370,8 @@ span {
         }
 
         button {
-          background-color: #304562;
-          width: 0.6rem;
+          width: 0.8rem;
           height: 0.3rem;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          border-radius: 0;
         }
         .p-highlight button {
           background-color: #FFD54F;
@@ -443,65 +407,72 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 1px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.3rem;
+        border: 1px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 0.5rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.3rem solid #314766;
+      border-radius: 2px;
 
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 0.5rem 0.2rem 0.5rem;
+        padding: 0.8rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         .text-center {
           .img-project-container {
-            height: 150px;
+            height: 200px;
           }
         }
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0.7rem 0.9rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 300;
-          font-size: x-large;
-        }
+        padding: 0.5rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
-          width: 0.4rem;
-          height: 0.5rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.6rem;
+          width: 1rem;
+          height: 1rem;
         }
       }
 
       p {
-        font-size: 8px;
+        font-size: 10px;
       }
 
       .p-icon {
-        width: 0.9rem;
         height: 0.7rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
         width: 1rem;
-        height: 1.2rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.4rem;
+        height: 1rem;
+      }
 
+      .p-carousel .p-carousel-indicators {
+        padding: 0.2rem;
+
+        li {
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        button {
+          width: 1.5rem;
+          height: 0.4rem;
+        }
+        .p-highlight button {
+          background-color: #FFD54F;
+        }
       }
     }
   }
@@ -534,12 +505,25 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 1px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.3rem;
+        border: 1px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 0.8rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.6rem solid #314766;
+      border-radius: 3px;
 
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 1rem 0 1rem;
+        padding: 1rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         .text-center {
           .img-project-container {
@@ -549,28 +533,13 @@ span {
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0.7rem 0.9rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 400;
-          font-size: xxx-large;
-        }
+        padding: 0.7rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
-          width: 0.4rem;
-          height: 0.5rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.6rem;
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
 
@@ -579,25 +548,16 @@ span {
       }
 
       .p-icon {
-        width: 0.9rem;
-        height: 0.7rem;
+        height: 0.8rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 1rem;
-        height: 1.2rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.4rem;
+        width: 1.5rem;
+        height: 1.5rem;
       }
     }
   }
 }
-
-
 
 @media (min-width: 2000px) {
   .img-container {
@@ -625,12 +585,25 @@ span {
       object-fit: contain;
     }
 
+    .p-fieldset {
+      border: 1.5px solid #304562;
+      .p-fieldset-legend {
+        padding: 0.5rem;
+        border: 1.5px solid #304562;
+      }
+      .p-fieldset-content {
+        padding: 3rem;
+      }
+    }
+
     .p-dialog {
+      border: 0.6rem solid #314766;
+      border-radius: 3px;
 
       .p-dialog-content {
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 0 1.5rem 1rem 1.5rem;
+        padding: 1.5rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         .text-center {
           .img-project-container {
@@ -640,49 +613,27 @@ span {
       }
 
       .p-dialog-header {
-        border-bottom: 0 none;
-        background: #1f2d40;
-        color: rgba(255, 255, 255, 0.87);
-        padding: 6rem 3rem;
-        border-top-right-radius: 1px;
-        border-top-left-radius: 1px;
-
-        .p-dialog-title {
-          font-family: cursive;
-          font-weight: 800;
-          font-size: 80px;
-        }
+        padding: 1rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
 
         .p-dialog-header-icon {
           width: 3rem;
           height: 3rem;
-          color: rgba(255, 255, 255, 0.6);
-          border: 0 none;
-          background: transparent;
-          border-radius: 50%;
-          transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-          margin-right: 0.8rem;
         }
       }
 
       p {
-        font-size: 40px;
+        font-size: 35px;
       }
 
       .p-icon {
-        width: 3rem;
         height: 3rem;
       }
 
       .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
-        width: 2rem;
-        height: 1.8rem;
-        color: rgba(255, 255, 255, 0.6);
-        border: 0 none;
-        background: transparent;
-        border-radius: 50%;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        margin: 0.8rem;
+        width: 3rem;
+        height: 3rem;
       }
     }
   }

@@ -13,6 +13,7 @@ import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { MessagesModule } from 'primeng/messages';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [],
@@ -30,7 +31,8 @@ import { MessagesModule } from 'primeng/messages';
     ChipModule,
     ButtonModule,
     ToggleButtonModule,
-    MessagesModule
+    MessagesModule,
+    FieldsetModule
   ],
   exports: [
     MenubarModule,
@@ -44,7 +46,8 @@ import { MessagesModule } from 'primeng/messages';
     ChipModule,
     ButtonModule,
     ToggleButtonModule,
-    MessagesModule
+    MessagesModule,
+    FieldsetModule
   ]
 })
 export class PrimeNgModule { }

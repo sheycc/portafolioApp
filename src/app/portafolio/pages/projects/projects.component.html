@@ -17,13 +17,21 @@
         Angular
       </button>
     </div>
+<!--    <div class="grid">-->
+<!--      <div class="col-6" *ngFor="let item of projects">-->
+<!--        <p-card>-->
+<!--          <app-project-dialog [index]="item" [imageUrl]="projectsImages[item]" [projectsName]="projectsName" [projectsTech]="projectsTech" [projectsText]="projectsText"></app-project-dialog>-->
+<!--        </p-card>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="grid">
-      <div class="col-6" *ngFor="let item of projects">
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" >
+      <div fxFlex="45"   fxFlex.sm="90" fxFlex.xs="95" style="margin: 5px 10px" *ngFor="let item of projects">
         <p-card>
           <app-project-dialog [index]="item" [imageUrl]="projectsImages[item]" [projectsName]="projectsName" [projectsTech]="projectsTech" [projectsText]="projectsText"></app-project-dialog>
         </p-card>
       </div>
     </div>
+
   </div>
 </div>

@@ -3,6 +3,7 @@ import {PrimeNgModule} from "../../../prime-ng/prime-ng.module";
 import {ProjectDialogComponent} from "../../components/project-dialog/project-dialog.component";
 import {NgForOf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 
 @Component({
   selector: 'app-projects',
@@ -11,7 +12,8 @@ import {FormsModule} from "@angular/forms";
     PrimeNgModule,
     ProjectDialogComponent,
     NgForOf,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
