@@ -120,7 +120,7 @@
     }
 
     .p-component {
-      font-size: 5px;
+      font-size: 8px;
     }
 
     .mr-2 {
@@ -128,11 +128,9 @@
     }
 
     .p-menubar-button {
-
       .p-icon {
         height: 0.6rem;
       }
-
     }
 
     .p-menubar .p-menubar-end .avatar-container .p-avatar {
@@ -149,16 +147,12 @@
       border: 0.2px solid #304562;
       .p-menuitem > .p-menuitem-content .p-menuitem-link {
         padding: 0.4rem 0.6rem;
-        -webkit-user-select: none;
-        user-select: none;
       }
     }
 
     .pi {
-      font-size: 10px;
+      font-size: 12px;
       display: inline-block;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
   }
 

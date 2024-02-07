@@ -196,15 +196,15 @@ span {
   }
 
   .img-text {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .img-container:hover .img-text {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .img-text span {
-    font-size: 6px;
+    font-size: 8px;
   }
 
   ::ng-deep {
@@ -236,7 +236,7 @@ span {
 
         .text-center {
           .img-project-container {
-            height: 100px;
+            height: 120px;
           }
         }
       }
@@ -253,7 +253,7 @@ span {
       }
 
       p {
-        font-size: 5px;
+        font-size: 8px;
       }
 
       .p-icon {
