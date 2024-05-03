@@ -9,10 +9,6 @@
     }
   }
 
-  * {
-    box-sizing: border-box;
-  }
-
   .img-container {
     background-image: url('/assets/home.jpg');
     background-size: cover;
@@ -106,20 +102,20 @@
     .img-text {
       width: 80%;
       p, .material-symbols-outlined {
-        font-size: medium;
+        font-size: 6px;
       }
     }
 
     .img-link-text {
       p {
-        font-size: 8px;
+        font-size: 4px;
       }
     }
 
     .animated-button {
       margin-top: -10px;
       .pi {
-        font-size: 0.4rem;
+        font-size: 0.2rem;
       }
     }
   }
@@ -128,20 +124,20 @@
     .img-text {
       width: 80%;
       p, .material-symbols-outlined {
-        font-size: large;
+        font-size: small;
       }
     }
 
     .img-link-text {
       p {
-        font-size: xx-small;
+        font-size: 4px;
       }
     }
 
     .animated-button {
       margin-top: -8px;
       .pi {
-        font-size: 0.7rem;
+        font-size: 0.2rem;
       }
     }
   }
@@ -150,20 +146,20 @@
     .img-text {
       width: 90%;
       p, .material-symbols-outlined {
-        font-size: x-large;
+        font-size: large;
       }
     }
 
     .img-link-text {
       p {
-        font-size: small;
+        font-size: 6px;
       }
     }
 
     .animated-button {
       margin-top: -5px;
       .pi {
-        font-size: 0.7rem;
+        font-size: 0.4rem;
       }
     }
   }
