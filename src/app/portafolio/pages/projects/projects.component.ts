@@ -21,8 +21,8 @@ import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 export class ProjectsComponent {
   visible: boolean = false;
 
-  projectsLength = 6;
-  projects = Array.from({ length: 6 }, (_, index) => index);
+  projectsLength = 7;
+  projects = Array.from({ length: 7 }, (_, index) => index);
   _netActive: boolean = false;
   _flutterActive: boolean = false;
   _angularActive: boolean = false;
@@ -33,7 +33,8 @@ export class ProjectsComponent {
     3: 'mHealthApp',
     4: 'SubzeroApi',
     5: 'Encuestador - Notificador',
-    6: "Angular's Modules"
+    6: "Angular's Modules",
+    7: 'Gifty'
   };
 
   projectsImages = [
@@ -42,7 +43,8 @@ export class ProjectsComponent {
     '/assets/img/flutter-mHealth.png',
     '/assets/img/net-api.png',
     '/assets/img/flutter-maps.png',
-    "/assets/img/angular3.jpg"
+    '/assets/img/angular3.jpg',
+    '/assets/img/angular5.png',
   ];
 
   projectsTech = {
@@ -51,7 +53,8 @@ export class ProjectsComponent {
     3: 'Flutter & Dart, Python & Flask, mHealth',
     4: '.Net Core, Postgres, API Rest, Microservices',
     5: 'Flutter & Dart, JSON, .NET Framework & WebForms',
-    6: "Angular & TypeScript, Node.js, MongoDB"
+    6: "Angular & TypeScript, Node.js, MongoDB",
+    7: "Angular & TypeScript, Firebase Authentication, Firebase Database, Stripe",
   };
 
   projectsText = {
@@ -76,7 +79,8 @@ export class ProjectsComponent {
       'Módulo para representar datos mediante gráficas con\n' +
       'NgChartsModule.\n' +
       'Módulos para la búsqueda y gestión de países e imágenes usando\n' +
-      'APIs como API Rest Countries y API Giphy respectivamente.\n'
+      'APIs como API Rest Countries y API Giphy respectivamente.\n',
+    7: 'eCommerce para la venta o intercambio de artículos usados, con autenticacion, chats y pasarela de pagos integrados.',
   };
 
   showDialog() {
@@ -103,13 +107,13 @@ export class ProjectsComponent {
       _repArray = _repArray.concat([0, 1, 3]);
     }
     if (this._angularActive) {
-      _numRep = _numRep + 1;
-      _repArray = _repArray.concat([5]);
+      _numRep = _numRep + 2;
+      _repArray = _repArray.concat([5, 6]);
     }
 
     if(!this._flutterActive && !this._netActive && !this._angularActive) {
-      this.projectsLength = 6;
-      this.projects = Array.from({ length: 6 }, (_, index) => index);
+      this.projectsLength = 7;
+      this.projects = Array.from({ length: 7 }, (_, index) => index);
     } else {
       this.projectsLength = _numRep;
       this.projects = _repArray;

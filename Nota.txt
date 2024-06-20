@@ -1,0 +1,9 @@
+After do some change:
+
+- > ng build
+- pass the changes of dist/browser to docs
+- > git status (to see the changes)
+- > git add --all
+- > git commit -m 'Update portafolio'
+- > git push (to gh-pages)
+- - wait for the deploy
